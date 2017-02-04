@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SignInTest</string>
+
+    <string-array name="branchList">
+        <item>Applied Geology</item>
+        <item>Applied Geology</item>
+        <item>Computer Science</item>
+        <item>Electrical Engineering</item>
+    </string-array>
+
+    <string-array name="sectionList">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+    </string-array>
+
+    <string-array name="yearList">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>Final</item>
+        <item>Super-Final</item>
+    </string-array>
+</resources>

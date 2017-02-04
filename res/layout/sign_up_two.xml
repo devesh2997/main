@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/signupopt1"
+    android:paddingBottom="16dp"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView"
+        android:cropToPadding="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_container"
+        android:elevation="10dp"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:id="@+id/signUpTwoContainer"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:text="Tell Us About Yourself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpTwoText"
+            android:textColor="#14ccc1"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/signUpNameField"
+            android:hint="Name"
+            android:textColorHint="#eeeeee"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/email_field"
+            android:paddingBottom="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/signUpPhoneField"
+            android:hint="Mobile No."
+            android:textColorHint="#eeeeee"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/email_field"
+            android:paddingBottom="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:paddingStart="6dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/signUpAdmissionNoField"
+            android:inputType="text"
+            android:hint="Admission No."
+            android:textColorHint="#eeeeee"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/email_field"
+            android:paddingBottom="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/signUpBranchContainer">
+
+            <TextView
+                android:text="Branch :"
+                android:id="@+id/signUpBranchText"
+                android:layout_weight="1"
+                android:background="@drawable/email_field"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:textColor="#1dd399"
+                android:textSize="18sp"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Spinner
+                android:layout_height="35dp"
+                android:id="@+id/branchSpinner"
+                android:entries="@array/branchList"
+                android:background="@drawable/spinner_background"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:layout_weight="1"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="160dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpYearContainer"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Year"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/signUpYearText"
+                android:layout_weight="1"
+                android:background="@drawable/email_field"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:textColor="#1dd399"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Spinner
+                android:layout_height="35dp"
+                android:id="@+id/yearSpinner"
+                android:entries="@array/yearList"
+                android:background="@drawable/spinner_background"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:layout_weight="1"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="160dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpSectionContainer"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="Section"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:id="@+id/signUpSectionText"
+                android:layout_weight="1"
+                android:background="@drawable/email_field"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:textColor="#1dd399"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Spinner
+                android:layout_height="35dp"
+                android:id="@+id/sectionSpinner"
+                android:entries="@array/sectionList"
+                android:background="@drawable/spinner_background"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="6dp"
+                android:layout_weight="1"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="160dp" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/signin_button"
+            android:id="@+id/signUpThreeLink"
+            android:rotation="0"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+</RelativeLayout>

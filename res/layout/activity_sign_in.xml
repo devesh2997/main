@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.neutrinostruo.signintest.SignIn"
+    android:background="@drawable/signin_background"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:text="Not a member ?  Sign Up !"
+        android:textColor="#14ccc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpActivityLink"
+        android:layout_centerVertical="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_container"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="121dp"
+        android:alpha="1"
+        android:elevation="10dp"
+        android:id="@+id/signinContainer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+
+            android:text="SIGN IN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signInText"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#14ccc1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailField"
+            android:hint="Email"
+            android:textColorHint="#eeeeeeee"
+            android:paddingBottom="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:background="@drawable/email_field"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordField"
+            android:hint="Password"
+            android:textColorHint="#eeeeeeee"
+            android:paddingBottom="6dp"
+            android:paddingEnd="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:background="@drawable/email_field"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/signin_button"
+            android:id="@+id/signInLink"
+            android:rotation="0"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+</RelativeLayout>
